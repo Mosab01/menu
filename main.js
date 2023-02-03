@@ -65,5 +65,3 @@ window.addEventListener("resize", function(){
         }
     }
 })
-
-breakfast_btn.style.background = null;
