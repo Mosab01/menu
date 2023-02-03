@@ -54,9 +54,16 @@ function open_dinner_options(){
 }
 
 window.addEventListener("resize", function(){
-    if (window.matchMedia("(min-width: 1435px)").matches) {
-        
-        console.log("works");
+    if ((window.matchMedia("(min-width: 1437px)").matches) || (window.matchMedia("(width: 1437px)").matches)) {
+        for(var i=0;i<menu_item.length;i++){
+            menu_item[i].style.flexGrow = "0";
+        }
     }
-
+    else{
+        for(var i=0;i<menu_item.length;i++){
+            menu_item[i].style.flexGrow = "1";
+        }
+    }
 })
+
+breakfast_btn.style.background = null;
