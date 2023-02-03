@@ -1,0 +1,98 @@
+html, body{
+    width: 100%;
+    height: 100%;
+    font-family: arial;
+    overflow-x: hidden;
+}
+
+.header{
+    position: relative;
+    top: 50px;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    box-shadow: 0px 12px 3px -12px rgb(146, 106, 6);
+}
+
+.menu-options{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.menu-options button{
+    background-color: transparent;
+    width: 17%;
+    height: 45px;
+    margin: 10px;
+    border: solid 2px rgb(146, 106, 6);
+    color: rgb(146, 106, 6);
+    border-radius: 20px;
+    font-size: large;
+    transition: background-color,color 0.3s;
+    cursor: pointer;
+}
+
+.menu-options button:hover{
+    background-color: rgb(146, 106, 6);
+    color: white;
+}
+
+.menu-items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    position: relative;
+    left: 10%;
+}
+
+.menu-item{
+    flex-grow: 1;
+    width: 40%;
+    min-width: 555px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.right-side{
+    display: flex;
+    flex-direction: column;
+}
+
+img{
+    height: 110px;
+    aspect-ratio: 2/1;
+    border: solid 2px rgb(146, 106, 6);
+}
+
+.top-right-side{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 2px rgb(146, 106, 6);
+    margin-left: 20px;
+}
+
+#price{
+    color: rgb(146, 106, 6);
+    font-weight: bolder;
+}
+
+#item-name{
+    font-weight: bold;
+    font-size: large;
+}
+
+#desc{
+    padding-left: 20px;
+
+}
